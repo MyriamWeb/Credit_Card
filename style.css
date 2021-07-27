@@ -1,0 +1,220 @@
+body{
+    background-color: black;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+    color: #FF5400;
+    font-size: 40px;
+    margin: 30px;
+}
+p{
+    text-align: center;
+    font-size: 30px;
+    color: #969696;
+    margin: 50px;
+}
+span{
+    color: #008001;
+}
+.flip-card {
+    position: relative;
+    display: inline-block;
+    left: 10%;
+    background-color: transparent;
+    width: 700px;
+    height: 400px;
+    perspective: 1000px; 
+}
+.flipCard{
+    transform: rotateY(180deg);
+}
+#flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+  
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+  
+
+.flip-card-front {
+    background-color: #003049;
+    color: black;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.1);
+}
+.chip {
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    height: 23%;
+}
+  
+.contactless {
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    height: 15%;
+    transform: rotate(90deg);
+}
+  
+.visa {
+    position: absolute;
+    bottom: 2%;
+    right: 4%;
+    height: 25%;
+}
+#card_number {
+    position: absolute;
+    top: 55%;
+    width: 100%;
+    height: 50%;
+    font-size: 6rem;
+    color: #C0C0C0;
+    text-shadow: 0px 0px 5px black;
+    margin: 0;
+}
+#card_name  {
+    font-size: 1.9rem;
+    position: absolute;
+    top: 280px;
+    color: #C0C0C0;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 3px black;
+}
+#card_expire{
+    font-size: 1.5rem;
+    position: absolute;
+    top: 335px;
+    left: 60%;
+    margin: 0;
+    color: #C0C0C0;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 3px black;
+}
+  
+
+.flip-card-back {
+    background-color: #003049;
+    color: white;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.1);
+    transform: rotateY(180deg);
+}
+.bar{
+    position: absolute;
+    margin-top: 40px;
+    background-color: black;
+    width: 100%;
+    height: 80px;
+}
+.bar-write{
+    position: absolute;
+    background-color: white;
+    width: 80%;
+    height: 60px;
+    margin-top: 160px;
+    margin-left: 30px;
+}
+#der_number{
+    position: absolute;
+    margin-top: 25%;
+    margin-left: 87%;
+    font-size: 1.8rem;
+    letter-spacing: 0.6em;
+}
+.chip2{
+    position: absolute;
+    top: 65%;
+    left: 5%;
+    height: 23%;
+    filter: grayscale(100%);
+}
+.text-end{
+    position: absolute;
+    width: 60%;
+    font-size: 0.8em;
+    top: 60%;
+    left: 22%;
+}
+
+label{
+    font-weight: bold;
+    color: gray;
+}
+input{
+    margin-bottom: 40px;
+}
+
+.form{
+    position: relative;
+    left: 50%;
+    bottom: 360px;
+    width: 39%;
+    align-items: center;
+    font-size: 1.7em;
+    text-align: center;
+}
+
+#num_card, #num_card2{
+    width: 100%;
+    height: 35px;
+    outline: none;
+}
+#num_card:focus, #num_card2:focus {
+    border: 2px solid #FF5400;
+}
+
+.dtc{
+    display: flex;
+    flex-direction: row;
+}
+.dtc-2{
+    font-size: 1em;
+    text-align: center;
+    margin: 0;
+}
+#expe, #expe1{
+    width: 100%;
+    height: 35px;
+    outline: none;
+}
+#expe:focus, #expe1:focus{
+    border: 2px solid #FF5400;
+}
+
+.footer{
+    position: absolute;
+    top: 650px;
+    left: 200px;
+}
+.paie{
+    position: absolute;
+    background-color: #FF5400;
+    width: 600px;
+    height: 100px;
+    border-radius: 50px;
+    top: 650px;
+    right: 280px;
+}
+.p{
+    margin-top: 30px;
+    color: white;
+}
+.span2{
+    color: white;
+}

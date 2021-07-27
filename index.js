@@ -1,0 +1,26 @@
+//*****************Ici je crée le live des inputs du formulaire sur la carte ************************** */
+
+let numCard = document.getElementById ('num_card');
+let numCard2 = document.getElementById('num_card2');
+let date_Expe = document.getElementById('expe1');
+let crypt = document.getElementById('expe')
+
+numCard.onkeyup = numCard.onkeypress = function(){
+    document.getElementById('card_number').innerHTML = this.value;
+}
+numCard2.onkeyup = numCard2.onkeypress = function(){
+    document.getElementById('card_name').innerHTML = this.value;
+}
+date_Expe.onkeyup = date_Expe.onkeypress = function(){
+    document.getElementById('card_expire').innerHTML = this.value;
+}
+crypt.onkeyup = crypt.onkeypress = function(){
+    document.getElementById('der_number').innerHTML = this.value;
+}
+//****************Je crée le flip de la carte en cliquant dans le input Cryptogramme*********** */
+const number = document.getElementById("flip-card-inner")
+
+crypt.addEventListener("click",flipCard);
+function flipCard(){
+    number.classList.toggle("flipCard");
+}
