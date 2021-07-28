@@ -44,7 +44,7 @@
             <div class="dtc">
                 <div class="dtc-2">
                     <label for="numéro de carte">Date d'expiration</label>
-                    <input type="text" name="num_card" placeholder="MM/YY" id="expe1">
+                    <input type="text" name="num_card" placeholder="MM/YY" pattern ="(([0-9]{4})-([0-9]{4}))" minlength="4" maxlength="4" id="expe1" required>
                 </div>
                 <div class="dtc-2">
                     <label for="numéro de carte">Cryptogramme</label>
@@ -58,7 +58,7 @@
             <p>Paiement sécurisé par by HiPay SAS, 256-bit SSL</p>
         </div>
         <div class="paie">
-            <p class="p">Payer <span class="span2">35.00 &euro;</span></p>
+            <button class="p">Payer <span class="span2">35.00 &euro;</span></button>
         </div>
     <div>
         <script src="index.js"></script>
