@@ -18,9 +18,11 @@ crypt.onkeyup = crypt.onkeypress = function(){
     document.getElementById('der_number').innerHTML = this.value;
 }
 //****************Je crée le flip de la carte en cliquant dans le input Cryptogramme*********** */
-const number = document.getElementById("flip-card-inner")
+let number = document.getElementById("flip-card-inner")
 
-crypt.addEventListener("click",flipCard);
-function flipCard(){
-    number.classList.toggle("flipCard");
-}
+crypt.addEventListener("focus", () => {
+    number.style.transform = "rotateY(180deg)";
+});
+crypt.addEventListener("blur", () => {
+    number.style.transform = "rotateY(0deg)";
+});

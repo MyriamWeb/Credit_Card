@@ -30,9 +30,9 @@ span{
     height: 400px;
     perspective: 1000px; 
 }
-.flipCard{
+/* .flipCard{
     transform: rotateY(180deg);
-}
+} */
 #flip-card-inner {
     position: relative;
     width: 100%;
