@@ -158,8 +158,10 @@ label{
 }
 input{
     margin-bottom: 40px;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 0.6em;
 }
-
 .form{
     position: relative;
     left: 50%;
