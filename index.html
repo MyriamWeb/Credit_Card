@@ -35,11 +35,11 @@
         <form action="">
             <div>
                 <label for="numéro de carte">Numéro de la carte</label>
-                <input type="text" name="num_card" id="num_card">
+                <input type="text" name="num_card" id="num_card" pattern = "^((67\d{2})|(4\d{3})|(5[1-5]\d{2})|(6011))(-?\s?\d{4}){3}|(3[4,7])\d{2}-?\s?\d{6}-?\s?\d{5}$" required>
             </div>
             <div>
                 <label for="numéro de carte">Titulaire du compte</label>
-                <input type="text" name="num_card" id="num_card2">
+                <input type="text" name="num_card" id="num_card2" required>
             </div>
             <div class="dtc">
                 <div class="dtc-2">
@@ -48,7 +48,7 @@
                 </div>
                 <div class="dtc-2">
                     <label for="numéro de carte">Cryptogramme</label>
-                    <input type="text" name="num_card" placeholder="CVC" id="expe">
+                    <input type="text" name="num_card" placeholder="CVC" id="expe" pattern="([0-9]{3})" maxlength="3" minlength="3" required>
                 </div>
             </div>
             <div class="paie">
