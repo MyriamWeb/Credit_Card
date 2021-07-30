@@ -7,12 +7,18 @@ let crypt = document.getElementById('expe')
 
 numCard.onkeyup = numCard.onkeypress = function(){
     document.getElementById('card_number').innerHTML = this.value;
+    if (this.value.length === 4|| this.value.length === 9||this.value.length === 14) {
+        this.value = this.value += ' ';
+    }
 }
 numCard2.onkeyup = numCard2.onkeypress = function(){
     document.getElementById('card_name').innerHTML = this.value;
 }
 date_Expe.onkeyup = date_Expe.onkeypress = function(){
     document.getElementById('card_expire').innerHTML = this.value;
+    if (this.value.length === 2) {
+        this.value = this.value += '/';
+    }
 }
 crypt.onkeyup = crypt.onkeypress = function(){
     document.getElementById('der_number').innerHTML = this.value;
